@@ -76,12 +76,18 @@ console.log("==============================================================");
 // 우선순위 표시: HIGH_PRIORITY → "[긴급]", MEDIUM_PRIORITY → "[보통]", LOW_PRIORITY → "[낮음]"
 
 /* 로직 코드 작성 */
+const LABEL = {
+  [HIGH_PRIORITY]: "[긴급]",
+  [MEDIUM_PRIORITY]: "[보통]",
+  [LOW_PRIORITY]: "[낮음]",
+};
 const todosWithPriorityLabels = originTodos.map((todo) => {
-  if (todo.priority === HIGH_PRIORITY) {
-    return (todo.text = "[긴급] 할 일 1");
-  } else if (todo.priority === MEDIUM_PRIORITY) {
-    return (todo.text = "[보통] 할 일 2");
-  } else return (todo.text = "[낮음] 할 일 3");
+  return {
+    id: todo.id,
+    text: LABEL[todo.priority] + " " + todo.text, // 앞에 라벨 붙이기
+    completed: todo.completed,
+    priority: todo.priority,
+  };
 });
 // 출력 코드
 console.log(todosWithPriorityLabels);
@@ -96,40 +102,59 @@ console.log(todosWithPriorityLabels);
 ]
 */
 console.log("==============================================================");
-// // TODO: 특정 ID 할 일 찾기
-// // originTodos 배열에서 ID가 3인 할 일 찾기
-// let todoById3;
+// TODO: 특정 ID 할 일 찾기
+// originTodos 배열에서 ID가 3인 할 일 찾기
+/* 로직 코드 작성 */
+const todoById3 = originTodos.filter((todo) => {
+  if (todo["id"] === 3) {
+    return true;
+  }
+});
 
-// /* 로직 코드 작성 */
+// 출력 코드
+console.log("ID 3인 할 일:", todoById3);
 
-// // 출력 코드
-// console.log("ID 3인 할 일:", todoById3);
+// ID가 10인 할 일 찾기 (존재하지 않음)
+/* 로직 코드 작성 */
+const todoById10 = originTodos.filter((todo) => {
+  if (todo["id" === 10]) {
+    return true;
+  }
+});
 
-// // ID가 10인 할 일 찾기 (존재하지 않음)
-// let todoById10;
+// 출력 코드
+console.log("ID 10인 할 일:", todoById10);
 
-// /* 로직 코드 작성 */
+/* 출력 결과
+ID 3인 할 일: { id: 3, text: '할 일 3', completed: false, priority: 2 }
+ID 10인 할 일: undefined
+*/
 
-// // 출력 코드
-// console.log("ID 10인 할 일:", todoById10);
+const todoById = (id) =>
+  originTodos.filter((todo) => {
+    return todo.id === id;
+  });
 
-// /* 출력 결과
-// ID 3인 할 일: { id: 3, text: '할 일 3', completed: false, priority: 2 }
-// ID 10인 할 일: undefined
-// */
+console.log(todoById(3));
 
-// // TODO: 모든 할 일이 완료되었는지 확인
-// // originTodos 배열의 모든 할 일이 완료되었는지(completed가 true인지) 확인하기
-// let allTodosCompleted;
+console.log("==============================================================");
 
-// /* 로직 코드 작성 */
+// TODO: 모든 할 일이 완료되었는지 확인
+// originTodos 배열의 모든 할 일이 완료되었는지(completed가 true인지) 확인하기
 
-// // 출력 코드
-// console.log("모든 할 일 완료 여부:", allTodosCompleted);
+/* 로직 코드 작성 */
+// const allTodosCompleted = originTodos.filter() {
 
-// /* 출력 결과
-// 모든 할 일 완료 여부: false
-// */
+// }
+
+// 출력 코드
+console.log("모든 할 일 완료 여부:", allTodosCompleted);
+
+/* 출력 결과
+모든 할 일 완료 여부: false
+*/
+
+console.log("==============================================================");
 
 // // TODO: 긴급한 할 일이 있는지 확인
 // // originTodos 배열에서 높은 우선순위(HIGH_PRIORITY)이면서 완료되지 않은 할 일이 하나라도 있는지 확인하기
