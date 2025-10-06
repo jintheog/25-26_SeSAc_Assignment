@@ -283,11 +283,13 @@ console.log(compareNumbers(10, 10)); // 같다
 // 반환값: 매개변수 num의 절댓값
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
 
-/*
+function getAbsoluteValue(num) {
+  return Math.abs(num);
+}
+
 console.log(getAbsoluteValue(-5)); // 5
 console.log(getAbsoluteValue(10)); // 10
 console.log(getAbsoluteValue(0)); // 0
-*/
 
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
