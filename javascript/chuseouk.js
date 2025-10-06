@@ -203,7 +203,9 @@ console.log(result2);
 // 변수 hasPermission을 선언하고, 불리언 데이터 true를 할당한다
 // 상수 accessResult를 선언하고, hasPermission이 true라면 "접근 허용"을 할당하고, 아니라면 "접근 거부"를 할당한다
 // 그리고 상수 accessResult를 출력한다
-
+let hasPermission = true;
+const accessResult = hasPermission === true ? "접근 허용" : "접근 거부";
+console.log(accessResult);
 /* 출력 결과
 접근 허용
 */
