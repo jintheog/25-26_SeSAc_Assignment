@@ -64,7 +64,9 @@ Hello World
 // 변수 num1을 선언하고, 숫자 10을 할당한다.
 // 변수 string1을 선언하고, 문자열 "10"을 할당한다
 // 변수 num1과 string1이 같은 데이터인지 비교한 결과를 출력한다
-
+let num1 = 10;
+let string1 = "10";
+console.log(num1 === string1);
 /* 출력 결과
 false
 */
@@ -73,7 +75,9 @@ false
 // 변수 score를 선언하고, 숫자 85를 할당한다.
 // 변수 passScore를 선언하고, 숫자 90을 할당한다
 // 변수 score가 passScore보다 크거나 같은지 비교한 결과를 출력한다
-
+let score = 85;
+let passScore = 90;
+console.log(score >= passScore);
 /* 출력 결과
 false
 */
@@ -82,7 +86,10 @@ false
 // 변수 num2를 선언하고, 숫자 4를 할당한다
 // 변수 num2가 5보다 크면, "num2는 5보다 큽니다"를 출력한다
 // 아니라면 "num2는 5보다 작습니다"를 출력한다
-
+let num2 = 4;
+if (num2 > 5) {
+  console.log("num2는 5보다 큽니다");
+} else console.log("num2는 5보다 작습니다");
 /* 출력 결과
 num2는 5보다 작습니다
 */
