@@ -232,6 +232,12 @@ function greet(name) {
 }
 */
 
+const greet = (name) => {
+  return `안녕하세요, ${name}님!`;
+};
+
+console.log(greet("jin"));
+
 // 문제 [실습]
 // 아래 함수 선언식 코드를 화살표 함수로 변경한다
 
@@ -241,6 +247,11 @@ function multiply(a, b) {
 }
 */
 
+const multiply = (a, b) => {
+  return a * b;
+};
+console.log(multiply(1, 2));
+
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
 // 함수명: compareNumbers
@@ -249,11 +260,21 @@ function multiply(a, b) {
 // 두 숫자가 같으면 "같다"를 반환한다
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
 
-/*
+// function compareNumbers(num1, num2) {
+//   if (num1 === num2) {
+//     return "같다";
+//   } else if (num1 > num2) {
+//     return num1;
+//   } else return num2;
+// }
+
+function compareNumbers(num1, num2) {
+  return num1 === num2 ? "같다" : num1 > num2 ? num1 : num2;
+}
+
 console.log(compareNumbers(5, 10)); // 10
 console.log(compareNumbers(15, 5)); // 15
 console.log(compareNumbers(10, 10)); // 같다
-*/
 
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
