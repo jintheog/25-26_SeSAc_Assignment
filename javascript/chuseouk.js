@@ -298,10 +298,12 @@ console.log(getAbsoluteValue(0)); // 0
 // 반환값: 매개변수 password의 길이가 8 이상이면 true를 반환하고, 아니라면 false를 반환한다
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
 
-/*
+function verifyPassword(password) {
+  return password.length >= 8 ? true : false;
+}
+
 console.log(verifyPassword("password")); // true
 console.log(verifyPassword("pass")); // false
-*/
 
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
