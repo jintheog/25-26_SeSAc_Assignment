@@ -311,12 +311,13 @@ console.log(verifyPassword("pass")); // false
 // 매개변수: number
 // 반환값: 매개변수 number가 짝수이면 true를 반환하고, 아니라면 false를 반환한다
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
+function isEven(number) {
+  return number % 2 === 0 ? true : false;
+}
 
-/*
 console.log(isEven(4)); // true
 console.log(isEven(7)); // false
 console.log(isEven(0)); // true
-*/
 
 // 문제 [개념]
 // 배열의 생성 방법, 배열 요소 접근 방법, 배열 요소 추가 방법, 배열 요소 삭제 방법에 대해 작성한다
