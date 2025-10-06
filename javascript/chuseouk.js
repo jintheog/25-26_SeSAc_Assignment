@@ -152,7 +152,20 @@ if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
 // 4. 그 외는 "F"
 // 변수 score를 선언하고, 숫자 85를 할당한다
 // score에 따른 학점을 출력한다
-
+let score1 = 70;
+switch (true) {
+  case score1 >= 90:
+    console.log("A");
+    break;
+  case score1 >= 80:
+    console.log("B");
+    break;
+  case score1 >= 70:
+    console.log("C");
+    break;
+  default:
+    console.log("F");
+}
 /* 출력 결과
 B
 */
