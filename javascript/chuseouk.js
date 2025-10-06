@@ -218,9 +218,9 @@ function XXX(YYY) {
   return ZZZ;
 }
 
-XXX :
-YYY :
-ZZZ :
+XXX : 함수명. 함수의 이름, 호출 할 때 사용
+YYY : 매개변수 parameter, 함수가 입력받는 값
+ZZZ : 반환값, 함수가 최종적으로 돌려 주는 값 
 */
 
 // 문제 [실습]
