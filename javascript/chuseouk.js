@@ -44,14 +44,18 @@ console.log(variable);
 
 // 문제 [실습]
 // 상수 message를 선언하고, 문자열 "Hello World"를 할당한다. 그리고 상수 message를 출력한다
-
+const message = "Hello World";
+console.log(message);
 /* 출력 결과
 Hello World
 */
 
 // 문제 [개념]
 // JavaScript 비교 연산자 5개(>, <, >=, <=, ===, !==)의 의미를 작성한다
-
+/**
+ *
+ *
+ */
 // 문제 [실습]
 // 변수 num1을 선언하고, 숫자 10을 할당한다.
 // 변수 string1을 선언하고, 문자열 "10"을 할당한다
