@@ -35,6 +35,8 @@
  */
 // 문제 [실습]
 // 상수 variable을 선언하고, 숫자 10을 할당한다. 그리고 상수 variable를 출력한다
+const variable = 10;
+console.log(variable);
 
 /* 출력 결과
 10
