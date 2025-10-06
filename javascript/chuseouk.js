@@ -191,7 +191,9 @@ B
 // 변수 isLogin을 선언하고, 불리언 데이터 false를 할당한다
 // 상수 result2를 선언하고, isLogin이 true라면 "로그인 상태입니다"를 할당하고, 아니라면 "로그아웃 상태입니다"를 할당한다
 // 그리고 상수 result2를 출력한다
-
+let isLogin = false;
+const result2 = isLogin === true ? "로그인 상태입니다" : "로그아웃 상태입니다";
+console.log(result2);
 /* 출력 결과
 로그아웃 상태입니다
 */
