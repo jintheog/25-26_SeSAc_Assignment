@@ -699,18 +699,22 @@ console.log(
 // 문제 [실습]
 // 변수 originTodos의 각 원소 객체 중 priority 속성의 값이 1인 원소만 필터링하고, 변수 mediumPriorityTodos에 할당한다
 // 변수 mediumPriorityTodos를 출력한다
-
+let mediumPriorityTodos = originTodos.filter((todo) => todo.priority === 1);
+console.log(mediumPriorityTodos);
 /* 출력 결과
 [
   { id: 2, text: '할 일 2', completed: false, priority: 1 },
   { id: 4, text: '할 일 4', completed: true, priority: 1 }
 ]
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 originTodos의 각 원소 객체 중 completed 속성의 값이 false인 원소만 필터링하고, 변수 incompleteTodos에 할당한다
 // 변수 incompleteTodos를 출력한다
-
+let incompleteTodos = originTodos.filter((todo) => todo.completed === false);
+console.log(incompleteTodos);
 /* 출력 결과
 [
   { id: 2, text: '할 일 2', completed: false, priority: 1 },
@@ -718,9 +722,16 @@ console.log(
   { id: 5, text: '할 일 5', completed: false, priority: 0 }
 ]
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [개념]
 // 스프레드 연산자 ...에 대한 설명을 작성한다
+/**
+ * 스프레드 연산자 ... : 배열의 원소 또는 객체의 속성을 펼쳐서 새로운 배열 또는 객체를 생성 하는 문법.
+ * 그 과정에서 원본을 참조 하는것이 아니라 그 안의 1차 값들을 복사 하는 얕은 복사를 수행 한다.
+ * 만약 배열이나 객체 안에 중첩 구조만 있다면 그것들은 참조만(주소)만 복사 된다.
+ */
 
 // 문제 [실습]
 // 스프레드 연산자를 활용하여 변수 object5를 복사한 새로운 객체를 생성하고, 변수 object6에 할당한다
@@ -731,7 +742,9 @@ const object5 = { name: "홍길동", age: 20, city: "서울" };
 /* 출력 결과
 { name: '홍길동', age: 20, city: '서울' }
 */
-
+console.log(
+  "========================================================================"
+);
 // 아래 주석을 풀어서 두 변수(object5, object6)의 비교 결과를 출력한다
 // console.log(object5 === object6); // false
 
