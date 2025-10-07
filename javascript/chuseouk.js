@@ -417,19 +417,33 @@ console.log(
 // 문제 [실습]
 // 변수 object1을 선언하고, 속성 name, age, city를 가진 객체를 생성하고 할당한다
 // 변수 object1를 출력한다
-
+let object1 = {
+  name: "홍길동",
+  age: 0,
+  city: "서울",
+};
+console.log(object1);
 /* 출력 결과
 { name: '홍길동', age: 30, city: '서울' }
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 student를 선언하고, 속성 name, grade, subject을 가진 객체를 생성하고 할당한다
 // 변수 student를 출력한다
-
+let student = {
+  name: "김영희",
+  grade: 3,
+  subejct: "수학",
+};
+console.log(student);
 /* 출력 결과
 { name: '김영희', grade: 3, subject: '수학' }
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 object2에 속성명(key)key) job, 속성값(value) "개발자" 인 속성을 추가한다
 const object2 = { name: "홍길동", age: 30, city: "서울" };
