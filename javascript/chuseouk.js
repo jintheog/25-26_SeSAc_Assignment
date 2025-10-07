@@ -601,29 +601,41 @@ console.log(
 // 변수 numbers3를 선언하고, 배열 데이터 [1, 2, 3, 4, 5]를 할당한다
 // numbers3의 각 요소를 제곱한 새로운 배열을 생성하고, 변수 newNumbers에 할당한다.
 // 변수 newNumbers를 출력한다
-
+let numbers3 = [1, 2, 3, 4, 5];
+const newNumbers = numbers3.map((num) => num ** 2);
+console.log(newNumbers);
 /* 출력 결과
 [1, 4, 9, 16, 25]
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
-// 변수 prices를 선언하고, 배열 데이터 [1000, 2000, 3000, 4000, 5000]를 할당한다
+// 변수 prices를 선언하고, 배열 데이터 [1000, 2000, 3000, 4000, 5000]를
 // prices의 각 요소에 10%의 세금을 추가한 새로운 배열을 생성하고, 변수 taxIncludedPrices에 할당한다.
 // 변수 taxIncludedPrices를 출력한다
-
+let prices = [1000, 2000, 3000, 4000, 5000];
+const taxIncludedPrices = prices.map((price) => price * 1.1);
+console.log(taxIncludedPrices);
 /* 출력 결과
 [1100, 2200, 3300, 4400, 5500]
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 numbers4를 선언하고, 배열 데이터 [1, 2, 3, 4, 5]를 할당한다
 // numbers4의 각 요소 중 짝수만 필터링한 새로운 배열을 생성하고, 변수 newNumbers2에 할당한다.
 // 변수 newNumbers2를 출력한다
-
+let numbers4 = [1, 2, 3, 4];
+const newNumbers2 = numbers4.filter((num) => num % 2 === 0);
+console.log(newNumbers2);
 /* 출력 결과
 [2, 4]
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 ages를 선언하고, 배열 데이터 [15, 18, 22, 16, 25, 17]를 할당한다
 // ages의 각 요소 중 18 이상인 나이만 필터링한 새로운 배열을 생성하고, 변수 adults에 할당한다.
