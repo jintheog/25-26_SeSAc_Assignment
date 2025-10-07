@@ -571,18 +571,31 @@ console.log(
 // 반환값: 원본 객체에 할인가격(discountPrice) 속성과 값을 추가한 객체 (할인율 10% 적용)
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
 
-/*
+function processProduct(product) {
+  const discountPrice = product.price * 0.9;
+  product.discountPrice = discountPrice;
+  return product;
+}
+
 console.log(processProduct({ name: "스마트폰", price: 100000 })); // { name: '스마트폰', price: 100000, discountPrice: 90000 }
 console.log(processProduct({ name: "노트북", price: 150000 })); // { name: '노트북', price: 150000, discountPrice: 135000 }
-*/
+
 console.log(
   "========================================================================"
 );
 // 문제 [개념]
 // 배열의 고차 메서드 map()과 filter()의 기능을 작성한다
+/**
+ * map() : 배열의 모든 요소를 순회 하며 각 요소를 변화한 새로운 배열을 반환.
+ * filter() : 배열의 모든 요소를 순회 하며 조건을 만족하는 요소를 골라 새로운 배열을 반환.
+ */
 
 // 문제 [개념]
 // 배열의 고차 메서드 map()과 filter()의 차이점을 작성한다
+/**
+ * map()은 배열의 값을 가공하거나 변형할떄 사용. 모든 요소를 가공 하여 변환 할 값을 반환한다. 원본 배열과 길이가 항상 같다.
+ * filter()는 배열에서 조건에 맞는 요소를 골라 내어 true/false를 반환 하고 true인 요소를 새 배열에 추가한다. 원본 배열과 길이가 다를 수도 있다.
+ */
 
 // 문제 [실습]
 // 변수 numbers3를 선언하고, 배열 데이터 [1, 2, 3, 4, 5]를 할당한다
