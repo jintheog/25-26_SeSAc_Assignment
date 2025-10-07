@@ -335,6 +335,8 @@ console.log(isEven(0)); // true
 // 문제 [실습]
 // 변수 fruits를 선언하고, 배열 데이터 ["apple", "banana", "cherry"]를 할당한다
 // 변수 fruits를 출력한다
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits);
 
 /* 출력 결과
 ['apple', 'banana', 'cherry']
@@ -343,7 +345,8 @@ console.log(isEven(0)); // true
 // 문제 [실습]
 // 변수 colors를 선언하고, 배열 데이터 ["red", "green", "blue"]를 할당한다
 // 변수 colors를 출력한다
-
+let colors = ["red", "green", "blue"];
+console.log(colors);
 /* 출력 결과
 ['red', 'green', 'blue']
 */
@@ -351,7 +354,8 @@ console.log(isEven(0)); // true
 // 문제 [실습]
 // 변수 numbers를 선언하고, 배열 데이터 [1, 2, 3, 4, 5]를 할당한다
 // 변수 numbers를 출력한다
-
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
 /* 출력 결과
 [1, 2, 3, 4, 5]
 */
@@ -359,7 +363,7 @@ console.log(isEven(0)); // true
 // 문제 [실습]
 // 변수 scores를 선언하고, 배열 데이터 [85, 92, 78, 96, 88]를 할당한다
 // 변수 scores를 출력한다
-
+let scores = [85, 92, 78, 96, 88];
 /* 출력 결과
 [85, 92, 78, 96, 88]
 */
@@ -367,7 +371,7 @@ console.log(isEven(0)); // true
 // 문제 [실습]
 // 변수 letters를 선언하고, 배열 데이터 ["A", "B", "C", "D", "E"]를 할당한다
 // 변수 letters를 출력한다
-
+let letters = ["A", "B", "C", "D", "E"];
 /* 출력 결과
 ["A", "B", "C", "D", "E"]
 */
@@ -383,9 +387,9 @@ console.log(isEven(0)); // true
 // 문제 [실습]
 // 아래 배열 변수 numbers2에 6을 추가한다
 let numbers2 = [1, 2, 3, 4, 5];
-
+numbers2.push(6);
 // 변수 numbers2를 출력한다
-
+console.log(numbers2);
 /* 출력 결과
 [1, 2, 3, 4, 5, 6]
 */
@@ -393,9 +397,9 @@ let numbers2 = [1, 2, 3, 4, 5];
 // 문제 [실습]
 // 아래 배열 변수 colors2에 "yellow"를 추가한다
 let colors2 = ["red", "green", "blue"];
-
+colors2.push("yellow");
 // 변수 colors2를 출력한다
-
+console.log(colors2);
 /* 출력 결과
 ["red", "green", "blue", "yellow"]
 */
