@@ -736,17 +736,19 @@ console.log(
 // 문제 [실습]
 // 스프레드 연산자를 활용하여 변수 object5를 복사한 새로운 객체를 생성하고, 변수 object6에 할당한다
 const object5 = { name: "홍길동", age: 20, city: "서울" };
-
+const object6 = { ...object5 };
+console.log(object6);
 // 변수 object6를 출력한다
-
 /* 출력 결과
 { name: '홍길동', age: 20, city: '서울' }
 */
+
+// 아래 주석을 풀어서 두 변수(object5, object6)의 비교 결과를 출력한다
+console.log(object5 === object6); // false
+
 console.log(
   "========================================================================"
 );
-// 아래 주석을 풀어서 두 변수(object5, object6)의 비교 결과를 출력한다
-// console.log(object5 === object6); // false
 
 // 문제 [실습]
 // 스프레드 연산자를 활용하여 변수 student2를 복사한 새로운 객체를 생성하고, 변수 student3에 할당한다
