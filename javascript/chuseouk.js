@@ -685,7 +685,8 @@ const originTodos = [
 // 문제 [실습]
 // 변수 originTodos의 각 원소 객체 중 priority 속성의 값이 0인 원소만 필터링하고, 변수 highPriorityTodos에 할당한다
 // 변수 highPriorityTodos를 출력한다
-
+let higherPriorityTodos = originTodos.filter((todo) => todo.priority === 0);
+console.log(higherPriorityTodos);
 /* 출력 결과
 [
   { id: 1, text: '할 일 1', completed: true, priority: 0 },
