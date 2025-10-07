@@ -447,33 +447,39 @@ console.log(
 // 문제 [실습]
 // 변수 object2에 속성명(key)key) job, 속성값(value) "개발자" 인 속성을 추가한다
 const object2 = { name: "홍길동", age: 30, city: "서울" };
-object1.job = "개발자";
+object2.job = "개발자";
 // 변수 object2를 출력한다
 console.log(object2);
 /* 출력 결과
 { name: '홍길동', age: 30, city: '서울', job: '개발자' }
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 car에 속성명(key) color, 속성값(value) "빨간색" 인 속성을 추가한다
 const car = { brand: "현대", model: "소나타", year: 2023 };
-
+car.color = "빨간색";
 // 변수 car를 출력한다
-
+console.log(car);
 /* 출력 결과
 { brand: '현대', model: '소나타', year: 2023, color: '빨간색' }
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 object3의 age 속성을 20으로 수정한다
 const object3 = { name: "홍길동", age: 30, city: "서울" };
-
+object3.age = 20;
 // 변수 object3를 출력한다
-
+console.log(object3);
 /* 출력 결과
 { name: '홍길동', age: 20, city: '서울' }
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 product의 price 속성을 15000으로 수정한다
 const product = { name: "노트북", brand: "삼성", price: 120000 };
