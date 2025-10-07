@@ -483,42 +483,51 @@ console.log(
 // 문제 [실습]
 // 변수 product의 price 속성을 15000으로 수정한다
 const product = { name: "노트북", brand: "삼성", price: 120000 };
-
+product.price = 15000;
 // 변수 product를 출력한다
-
+console.log(product);
 /* 출력 결과
 { name: '노트북', brand: '삼성', price: 15000 }
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 object4의 city 속성을 출력한다
 const object4 = { name: "홍길동", age: 20, city: "서울" };
-
+console.log(object4.city);
 /* 출력 결과
 서울
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 book의 author 속성을 출력한다
 const book = { title: "자바스크립트 입문", author: "김개발", pages: 300 };
-
+console.log(book.author);
 /* 출력 결과
 김개발
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
 // 함수명: calculateArea
 // 매개변수: width, height
 // 반환값: 매개변수 width와 height의 곱
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
+function calculateArea(width, height) {
+  return width * height;
+}
 
-/*
 console.log(calculateArea(10, 20)); // 200
 console.log(calculateArea(5, 15)); // 75
 console.log(calculateArea(8, 8)); // 64
-*/
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
 // 함수명: calculateCircleArea
