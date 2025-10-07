@@ -640,11 +640,15 @@ console.log(
 // 변수 ages를 선언하고, 배열 데이터 [15, 18, 22, 16, 25, 17]를 할당한다
 // ages의 각 요소 중 18 이상인 나이만 필터링한 새로운 배열을 생성하고, 변수 adults에 할당한다.
 // 변수 adults를 출력한다
-
+let ages = [15, 18, 22, 16, 25, 17];
+let adults = ages.filter((age) => age >= 18);
+console.log(adults);
 /* 출력 결과
 [18, 22, 25]
 */
-
+console.log(
+  "========================================================================"
+);
 const originTodos = [
   {
     id: 1,
@@ -688,7 +692,9 @@ const originTodos = [
   { id: 5, text: '할 일 5', completed: false, priority: 0 }
 ]
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 변수 originTodos의 각 원소 객체 중 priority 속성의 값이 1인 원소만 필터링하고, 변수 mediumPriorityTodos에 할당한다
 // 변수 mediumPriorityTodos를 출력한다
