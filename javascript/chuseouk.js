@@ -534,25 +534,36 @@ console.log(
 // 매개변수: radius
 // 반환값: 매개변수 radius를 이용한 원의 넓이 (π * radius * radius, π는 3.14159 사용)
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
+function calculateCircleArea(radius) {
+  const π = 3.14158;
+  return π * radius ** 2;
+}
 
-/*
 console.log(calculateCircleArea(5)); // 78.53975
 console.log(calculateCircleArea(3)); // 28.27431
 console.log(calculateCircleArea(10)); // 314.159
-*/
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
 // 함수명: processScore
 // 매개변수: (객체) student
 // 반환값: 원본 객체에 총점(sum)과 평균(average) 속성과 값을 추가한 객체
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
+function processScore(student) {
+  const sum = student.score.reduce((acc, cur) => acc + cur, 0);
+  student.sum = sum;
+  student.average = sum / student.score.length;
+  return student;
+}
 
-/*
 console.log(processScore({ name: "홍길동", score: [85, 90, 94, 50] })); // { name: '홍길동', score: [85, 90, 94, 50], sum: 319, average: 79.75 }
 console.log(processScore({ name: "김철수", score: [92, 88, 95, 80] })); // { name: '김철수', score: [92, 88, 95, 80], sum: 355, average: 88.75 }
-*/
 
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
 // 함수명: processProduct
@@ -564,7 +575,9 @@ console.log(processScore({ name: "김철수", score: [92, 88, 95, 80] })); // { 
 console.log(processProduct({ name: "스마트폰", price: 100000 })); // { name: '스마트폰', price: 100000, discountPrice: 90000 }
 console.log(processProduct({ name: "노트북", price: 150000 })); // { name: '노트북', price: 150000, discountPrice: 135000 }
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [개념]
 // 배열의 고차 메서드 map()과 filter()의 기능을 작성한다
 
