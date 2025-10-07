@@ -447,9 +447,9 @@ console.log(
 // 문제 [실습]
 // 변수 object2에 속성명(key)key) job, 속성값(value) "개발자" 인 속성을 추가한다
 const object2 = { name: "홍길동", age: 30, city: "서울" };
-
+object1.job = "개발자";
 // 변수 object2를 출력한다
-
+console.log(object2);
 /* 출력 결과
 { name: '홍길동', age: 30, city: '서울', job: '개발자' }
 */
