@@ -883,9 +883,9 @@ console.log(
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 array2의 첫 번째 원소를 변수 first에, 두 번째 원소를 변수 second에, 나머지 원소를 변수 rest에 할당한다
 const array2 = [1, 2, 3, 4, 5];
-const [first, second, ...rest] = array2;
+const [a, b, ...r] = array2;
 // 아래 주석을 해제해서 변수 first, second, rest를 출력한다
-console.log(first, second, rest);
+console.log(a, b, r);
 
 /* 출력 결과
 1 2 [3, 4, 5]
