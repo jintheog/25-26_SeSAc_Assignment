@@ -846,7 +846,12 @@ console.log(
 // 문제 [개념]
 // 구조 분해 할당에 대한 설명을 작성한다
 /**
- *
+ * 구조 분해 할당 : destructuring assignment
+ * 배열이나 객체의 값을 개별 변수로 분해하여 할당 하는 문법
+ * 자료구조 (배열이나 객체) 안에 들어있는 값을 꺼내서 변수에 바로 담는 문법
+ * e.g. const arr = [1, 2, 3, 4]
+ * const [first] = arr;
+ * console.log(first); // 1
  */
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 object9의 name 속성을 변수 name에, age 속성을 변수 age에, city 속성을 변수 city에 할당한다
