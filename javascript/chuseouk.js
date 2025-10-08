@@ -833,7 +833,8 @@ console.log(
 // 스프레드 연산자 ... 를 활용하여 변수 colors3에 문자열 "보라색"을 추가한 새로운 배열을 생성하고, 변수 colors4에 할당한다
 const colors3 = ["빨강", "파랑", "노랑"];
 // 변수 colors4를 출력한다
-
+const colors4 = [...colors3, "보라색"];
+console.log(colors4);
 /* 출력 결과
 ["빨강", "파랑", "노랑", "보라색"]
 */
@@ -844,7 +845,9 @@ console.log(
 
 // 문제 [개념]
 // 구조 분해 할당에 대한 설명을 작성한다
-
+/**
+ *
+ */
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 object9의 name 속성을 변수 name에, age 속성을 변수 age에, city 속성을 변수 city에 할당한다
 const object9 = { name: "홍길동", age: 20, city: "서울" };
