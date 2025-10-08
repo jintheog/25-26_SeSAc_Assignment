@@ -870,25 +870,29 @@ console.log(
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 car2의 brand 속성을 변수 carBrand에, model 속성을 변수 carModel에, year 속성을 변수 carYear에 할당한다
 const car2 = { brand: "기아", model: "K5", year: 2022 };
-
+const { brand: carBrand, model: carModel, year: carYear } = car2;
 // 아래 주석을 해제해서 변수 carBrand, carModel, carYear를 출력한다
-// console.log(carBrand, carModel, carYear);
+console.log(carBrand, carModel, carYear);
 
 /* 출력 결과
 기아 K5 2022
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 array2의 첫 번째 원소를 변수 first에, 두 번째 원소를 변수 second에, 나머지 원소를 변수 rest에 할당한다
 const array2 = [1, 2, 3, 4, 5];
-
+const [first, second, ...rest] = array2;
 // 아래 주석을 해제해서 변수 first, second, rest를 출력한다
-// console.log(first, second, rest);
+console.log(first, second, rest);
 
 /* 출력 결과
 1 2 [3, 4, 5]
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 scores2의 첫 번째 원소를 변수 firstScore에, 두 번째 원소를 변수 secondScore에, 나머지 원소를 변수 restScores에 할당한다
 const scores2 = [95, 87, 92, 78, 89];
