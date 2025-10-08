@@ -896,9 +896,9 @@ console.log(
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 scores2의 첫 번째 원소를 변수 firstScore에, 두 번째 원소를 변수 secondScore에, 나머지 원소를 변수 restScores에 할당한다
 const scores2 = [95, 87, 92, 78, 89];
-
+const [firstScore, secondScore, ...restScores] = scores2;
 // 아래 주석을 해제해서 변수 firstScore, secondScore, restScores를 출력한다
-// console.log(firstScore, secondScore, restScores);
+console.log(firstScore, secondScore, restScores);
 
 /* 출력 결과
 95 87 [92, 78, 89]
