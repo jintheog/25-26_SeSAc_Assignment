@@ -853,6 +853,7 @@ console.log(
  * const [first] = arr;
  * console.log(first); // 1
  */
+
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 object9의 name 속성을 변수 name에, age 속성을 변수 age에, city 속성을 변수 city에 할당한다
 const object9 = { name: "홍길동", age: 20, city: "서울" };
