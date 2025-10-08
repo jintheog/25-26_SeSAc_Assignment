@@ -856,15 +856,17 @@ console.log(
 
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 object9의 name 속성을 변수 name에, age 속성을 변수 age에, city 속성을 변수 city에 할당한다
-const object9 = { name: "홍길동", age: 20, city: "서울" };
-
+const object9 = { name: "홍길동", age2: 20, city: "서울" };
+const { name, age2, city } = object9;
 // 아래 주석을 해제해서 변수 name, age, city를 출력한다
-// console.log(name, age, city);
+console.log(name, age2, city);
 
 /* 출력 결과
 홍길동 20 서울
 */
-
+console.log(
+  "========================================================================"
+);
 // 문제 [실습]
 // 구조 분해 할당을 활용하여 변수 car2의 brand 속성을 변수 carBrand에, model 속성을 변수 carModel에, year 속성을 변수 carYear에 할당한다
 const car2 = { brand: "기아", model: "K5", year: 2022 };
