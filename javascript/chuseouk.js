@@ -753,35 +753,43 @@ console.log(
 // 문제 [실습]
 // 스프레드 연산자를 활용하여 변수 student2를 복사한 새로운 객체를 생성하고, 변수 student3에 할당한다
 const student2 = { name: "이영희", grade: 2, subject: "영어" };
-
+const student3 = { ...student2 };
 // 변수 student3를 출력한다
-
+console.log(student3);
 /* 출력 결과
 { name: '이영희', grade: 2, subject: '영어' }
 */
-
 // 아래 주석을 풀어서 두 변수(student2, student3)의 비교 결과를 출력한다
-// console.log(student2 === student3); // false
+console.log(student2 === student3); // false
+console.log(
+  "========================================================================"
+);
 
 // 문제 [실습]
 // 스프레드 연산자를 활용하여 변수 object7에 속성명(key) country, 속성값(value) "대한민국" 인 속성을 추가한 새로운 객체를 생성하고, 변수 object8에 할당한다
 const object7 = { name: "홍길동", age: 20, city: "서울" };
-
+const object8 = { ...object7, country: "대한민국" };
 // 변수 object8를 출력한다
-
+console.log(object8);
 /* 출력 결과
 { name: '홍길동', age: 20, city: '서울', country: '대한민국' }
 */
+console.log(
+  "========================================================================"
+);
 
 // 문제 [실습]
 // 스프레드 연산자를 활용하여 변수 laptop에 속성명(key) warranty, 속성값(value) "2년" 인 속성을 추가한 새로운 객체를 생성하고, 변수 laptopWithWarranty에 할당한다
 const laptop = { brand: "LG", model: "그램", price: 1500000 };
-
+const laptopWithWarranty = { ...laptop, warranty: "2년" };
 // 변수 laptopWithWarranty를 출력한다
-
+console.log(laptopWithWarranty);
 /* 출력 결과
 { brand: 'LG', model: '그램', price: 1500000, warranty: '2년' }
 */
+console.log(
+  "========================================================================"
+);
 
 // 문제 [실습]
 // 스프레드 연산자 ... 를 활용하여 변수 array1을 복사한 새로운 배열을 생성하고, 변수 array2에 할당한다
@@ -789,6 +797,10 @@ const array1 = [1, 2, 3, 4, 5];
 
 // 아래 주석을 풀어서 두 변수(array1, array2)의 비교 결과를 출력한다
 // console.log(array1 === array2); // false
+
+console.log(
+  "========================================================================"
+);
 
 // 문제 [실습]
 // 스프레드 연산자 ... 를 활용하여 변수 fruits2를 복사한 새로운 배열을 생성하고, 변수 fruits3에 할당한다
