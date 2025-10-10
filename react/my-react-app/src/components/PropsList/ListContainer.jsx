@@ -8,12 +8,20 @@ export default function ListContainer() {
     { id: 4, name: "4번 아이템" },
     { id: 5, name: "5번 아이템" },
   ];
-
+  function handleClick(name) {
+    alert(name);
+  }
   return (
     <div>
-      {list.map((element) => {
-        <ListItem key={element.id} item={element} />;
-      })}
+      {list.map((element) => (
+        <ListItem
+          onClick={() => {
+            handleClick(element.name);
+          }}
+          key={element.id}
+          item={element}
+        />
+      ))}
     </div>
   );
 }
