@@ -329,7 +329,13 @@ let colors2 = ["red", "green", "blue"];
 // 문제 [실습]
 // 변수 object1을 선언하고, 속성 name, age, city를 가진 객체를 생성하고 할당한다
 // 변수 object1를 출력한다
-
+console.log("----------------------------------------------------");
+let object1 = {
+  name: "홍길동",
+  age: 30,
+  city: "서울",
+};
+console.log(object1);
 /* 출력 결과
 { name: '홍길동', age: 30, city: '서울' }
 */
@@ -389,11 +395,11 @@ const object4 = { name: "홍길동", age: 20, city: "서울" };
 /* 출력 결과
 서울
 */
-
+console.log("----------------------------------------------------");
 // 문제 [실습]
 // 변수 book의 author 속성을 출력한다
 const book = { title: "자바스크립트 입문", author: "김개발", pages: 300 };
-
+console.log(book.author);
 /* 출력 결과
 김개발
 */
@@ -435,25 +441,36 @@ console.log(calculateCircleArea(10)); // 314.159
 console.log(processScore({ name: "홍길동", score: [85, 90, 94, 50] })); // { name: '홍길동', score: [85, 90, 94, 50], sum: 319, average: 79.75 }
 console.log(processScore({ name: "김철수", score: [92, 88, 95, 80] })); // { name: '김철수', score: [92, 88, 95, 80], sum: 355, average: 88.75 }
 */
-
+console.log("----------------------------------------------------");
 // 문제 [실습]
 // 아래 설명을 보고 함수를 구현한다.(함수 선언식으로 구현한다)
 // 함수명: processProduct
 // 매개변수: (객체) product
 // 반환값: 원본 객체에 할인가격(discountPrice) 속성과 값을 추가한 객체 (할인율 10% 적용)
 // 함수 작성 후 아래 주석 처리된 테스트 코드의 주석을 해제하고 실행하여 출력 결과를 비교한다
+const processProduct = (product) => {
+  const discountPrice = product.price * 0.9;
+  product.discountPrice = discountPrice;
+  return product;
+};
 
-/*
 console.log(processProduct({ name: "스마트폰", price: 100000 })); // { name: '스마트폰', price: 100000, discountPrice: 90000 }
 console.log(processProduct({ name: "노트북", price: 150000 })); // { name: '노트북', price: 150000, discountPrice: 135000 }
-*/
 
 // 문제 [개념]
 // 배열의 고차 메서드 map()과 filter()의 기능을 작성한다
+/**
+ * map : 배열의 모든 원소를 순회 하면서 콜백함수 로직을 실행 후 그 반환값을 모아 새로운 배열은 반환
+  filter: 배열의 모든 원소를 순회 하며 콜백함수 로직을 실행 후 그 반환값이 true인 원소들을 모아 새로운 배열을 생성하여 반환. 
 
+*/
 // 문제 [개념]
 // 배열의 고차 메서드 map()과 filter()의 차이점을 작성한다
 
+/**
+ * map()은 원본 배열의 원소 값을 변경할때 사용. 원본 배열과 길이가 항상 같다
+ * filter()는
+ */
 // 문제 [실습]
 // 변수 numbers3를 선언하고, 배열 데이터 [1, 2, 3, 4, 5]를 할당한다
 // numbers3의 각 요소를 제곱한 새로운 배열을 생성하고, 변수 newNumbers에 할당한다.
