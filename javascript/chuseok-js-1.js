@@ -322,6 +322,8 @@ let colors2 = ["red", "green", "blue"];
 /**
  * 객체 생성 방법 : {} 중괄호 사용해서 생성 let obj = { key: value, key2: value2}
  *객체 속성 접근 방법 : . 혹은 [] 로 접근; key에 변수, 공백, 특수문자가 포함된 경우 []로 접근; person.name, person["age"]
+ 객체 속성 추가 방법: .혹은 [] 로 할당. person.age = 22; person["job"] = "engineer";
+ 객체 속성 삭제 방법: delete 객체.속성명
  */
 
 // 문제 [실습]
